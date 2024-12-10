@@ -1,0 +1,52 @@
+
+1- TypeScript é uma linguagem de programação que se baseia no JavaScript, mas adiciona tipagem estática e outros recursos avançados. Foi desenvolvido pela Microsoft e é frequentemente usado para criar aplicativos mais robustos e de maior escala. TypeScript é um superconjunto de JavaScript, ou seja, todo código válido em JavaScript é válido em TypeScript, mas TypeScript oferece mais recursos para melhorar a segurança e o desenvolvimento.
+
+Principais vantagens do TypeScript em relação ao JavaScript:
+Tipagem Estática:
+
+TypeScript permite que você defina tipos para variáveis, parâmetros de funções e valores de retorno. Isso ajuda a detectar erros de tipo em tempo de compilação, antes que o código seja executado.
+Exemplo: você pode garantir que uma variável que deveria ser um número não seja acidentalmente atribuída a uma string, prevenindo muitos erros comuns que só seriam detectados em tempo de execução no JavaScript.
+Melhor Suporte a IDEs e Ferramentas de Desenvolvimento:
+
+Como TypeScript tem tipagem estática, ele oferece uma melhor integração com ferramentas de desenvolvimento, como editores de código e IDEs, proporcionando autocompletação, verificação de erros em tempo real, e navegação mais eficiente pelo código.
+Isso resulta em uma experiência de desenvolvimento mais produtiva e com menos erros, especialmente em projetos grandes.
+
+2- 
+Tipagem Estática:
+
+Em TypeScript, as variáveis e parâmetros de função têm tipos explícitos. No caso do código acima, a: number e b: number indicam que os parâmetros esperados pela função multiplicar são do tipo number (número).
+A declaração do tipo de retorno : number especifica que a função deve retornar um número.
+Em JavaScript, esse tipo de declaração não existe, e a função poderia ser escrita sem especificar tipos
+
+Erro de Tipagem:
+
+No TypeScript, o código geraria um erro de compilação quando você tentar passar um valor de tipo incorreto, como uma string ("5") no lugar de um número. A função multiplicar(4, "5") vai gerar um erro de tipo porque a string "5" não pode ser multiplicada com um número (tipagem estática impede isso).
+Em JavaScript, isso não causaria um erro. JavaScript automaticamente converteria a string para um número, resultando na multiplicação correta
+
+3- 
+Ter Node.js Instalado e NPM .
+Utilizar o comando para instalar 
+Criar pasta
+
+4-
+O arquivo tsconfig.json é um arquivo de configuração utilizado pelo TypeScript para controlar o comportamento da compilação do código. Ele permite que você defina várias opções de configuração, como os arquivos de entrada e saída, a forma como o código será compilado, e outros parâmetros essenciais para o processo de transpilação do TypeScript para JavaScript.
+
+Importância do tsconfig.json:
+
+Definir opções de compilação: Esse arquivo permite que você configure como o TypeScript deve compilar seu código, controlando aspectos como a versão do ECMAScript alvo, quais diretórios ou arquivos devem ser compilados, e a inclusão de recursos específicos da linguagem.
+
+Facilidade no gerenciamento do projeto: Ao configurar o tsconfig.json, você pode garantir que todos os desenvolvedores ou ferramentas que interagem com o projeto sigam as mesmas configurações e regras, proporcionando consistência no ambiente de desenvolvimento.
+
+"target":
+
+Define a versão do ECMAScript para a qual o código TypeScript será transpilado. Isso permite que você escolha a versão de JavaScript (como ES5, ES6/ES2015, ES2017, etc.) para o código compilado.
+
+"outDir":
+
+Define o diretório de saída onde os arquivos JavaScript compilados serão armazenados. Essa configuração é útil para organizar os arquivos gerados a partir dos arquivos
+
+5-
+
+Instalação do TypeScript (se necessário): npm install -g typescript
+Compilação do TypeScript: tsc index.ts
+Execução do código compilado (JavaScript): node index.js
